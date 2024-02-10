@@ -27,3 +27,14 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+const insertImages = document.querySelector(`.gallery`);
+
+const htmlInsert = [];
+
+images.map((image) => {
+  const liElement = `<li style="list-style-type: none;"><img src="${image.url}" alt="${image.alt}" style="width:60%"/></li>`;
+  htmlInsert.push(liElement);
+});
+
+insertImages.insertAdjacentHTML('afterBegin', htmlInsert.join(''));
