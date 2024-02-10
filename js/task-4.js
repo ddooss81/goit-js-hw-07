@@ -17,7 +17,7 @@ loginUser.addEventListener("submit", (doIt) => {
     userEmail,
     userPassword,
   };
-ь
+
   console.log(userIdentData);
 
   loginUser.reset();
