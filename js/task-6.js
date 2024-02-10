@@ -9,12 +9,6 @@ const destroyButton = document.getElementById("controls").querySelector('[data-d
 const boxesElement = document.getElementById("boxes");
 const inputElement = document.getElementById("controls").querySelector('input');
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
-
 destroyButton.addEventListener('click', () => {
   boxesElement.innerHTML = "";
   inputElement.value = "";
