@@ -1,11 +1,8 @@
-let nameUser = "";
-document.getElementById("name-input").addEventListener("keyup", function (event) {
-  const inputValue = event.target.value.trim();
-
-  const nameOutput = document.getElementById("name-output");
-  if (inputValue !== "") {
-    nameOutput.textContent = inputValue;
+let userNameEnter = document.getElementById("name-input");
+userNameEnter.addEventListener("input", () => {
+  if (userNameEnter.value.trim() !== "") {
+    document.getElementById("name-output").textContent = userNameEnter.value.trim();
   } else {
-    nameOutput.textContent = "Anonymous";
-  }
+    document.getElementById("name-output").textContent = "Anonymous";
+  };
 });
