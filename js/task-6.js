@@ -27,5 +27,5 @@ createButton.addEventListener('click', () => {
     }
   boxesElement.innerHTML = boxElement;
   inputElement.value = "";
-  };
+  };  
 });
